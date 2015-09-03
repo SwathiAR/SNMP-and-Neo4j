@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="neo4jDao" class="com.torana.training.neo4jDAO.Neo4jDAO"/>
+       <bean id="neo4jDatabaseOperations" class="com.torana.training.neo4jDAO.Neo4jDatabaseOperations"/>
+       <bean id="jsonParser" class="com.google.gson.JsonParser"/>
+
+
+
+
+
+</beans>
