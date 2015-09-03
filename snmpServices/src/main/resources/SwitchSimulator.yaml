@@ -1,0 +1,59 @@
+name: Switch-Simulator
+dbType: Node
+dbName: Switch-Simulator
+mibs:
+      -
+        MIB: RFC1213-MIB
+        name: mib-2
+        OID: .1.3.6.1.2.1
+        objects:
+                 -
+                   name: system
+                   OID: .1.3.6.1.2.1.1
+                   objects:
+                            -
+                              name: sysDescr
+                              OID: .1.3.6.1.2.1.1.1.0
+                            -
+                              name: sysObjectId
+                              OID: .1.3.6.1.2.1.1.2.0
+                            -
+                              name: sysUpTime
+                              OID: .1.3.6.1.2.1.1.3.0
+                            -
+                              name: sysContact
+                              OID: .1.3.6.1.2.1.1.4.0
+                            -
+                              name: sysName
+                              OID: .1.3.6.1.2.1.1.5.0
+                            -
+                              name: sysLocation
+                              OID: .1.3.6.1.2.1.1.6.0
+                            -
+                              name: sysServices
+                              OID: .1.3.6.1.2.1.1.7.0
+                 -
+                   name: interfaces
+                   OID: .1.3.6.1.2.1.2
+                   objects:
+                            -
+                              name: ifNumber
+                              OID: .1.3.6.1.2.1.2.1.0
+                            -
+                              name: ifTable
+                              OID: .1.3.6.1.2.1.2.2
+                              objects:
+                                       -
+                                         name: ifEntry
+                                         OID: .1.3.6.1.2.1.2.2.1
+                                         objects:
+                                                  -
+                                                    name: ifIndex
+                                                    OID: .1.3.6.1.2.1.2.2.1.1
+                                                  -
+                                                    name: ifDescr
+                                                    OID: .1.3.6.1.2.1.2.2.1.2
+                                                  -
+                                                    name: ifType
+                                                    OID: .1.3.6.1.2.1.2.2.1.3
+
